@@ -114,7 +114,7 @@ const FlightSearchForm = () => {
             <FaToggleOn/>
             <span className="ml-2 bg-black">
             
-            Show Pro Filters</span>
+            Show <span className='text-orange-500 bg-black'>Pro Filters</span></span>
           </label>
         </div>
         <div className='text-left'>
