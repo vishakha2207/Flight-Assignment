@@ -63,9 +63,9 @@ const FlightSearchForm = () => {
     <div className='flex flex-col justify-center items-center'>
     <div className=" w-1/3 flex-col items-center justify-center bg-green-950">
       <div className=" p-6 rounded-lg shadow-lg">
-        <h2 className="text-white text-2xl mb-4 ">Choose Origin & Destination Airports:</h2>
+        <h2 className="text-white text-xl mb-4 ">Choose Origin & Destination Airports:</h2>
         <div className="mb-4 bg-black">
-          <label className="block  bg-black text-gray-300 text-left pl-3">Origin</label>
+          <label className="block pt-1 bg-black text-gray-300 text-left pl-3">Origin</label>
           <select
             // value={origin}
             onChange={(e) => setOrigin(e.target.value)}
@@ -79,7 +79,7 @@ const FlightSearchForm = () => {
           </select>
         </div>
         <div className="mb-4  bg-black">
-          <label className="block  bg-black text-left pl-3 text-gray-300">Destination</label>
+          <label className="block pt-1 bg-black text-left pl-3 text-gray-300">Destination</label>
           <select
             // value={destination}
             onChange={(e) => setDestination(e.target.value)}
@@ -93,7 +93,7 @@ const FlightSearchForm = () => {
           </select>
         </div>
         <div className="mb-4  bg-black">
-          <label className="block  bg-black text-left pl-3 text-gray-300">Cabin Selection</label>
+          <label className="block pt-1 bg-black text-left pl-3 text-gray-300">Cabin Selection</label>
           <select
             // value={cabin}
             onChange={(e) => setCabin(e.target.value)}
@@ -104,14 +104,14 @@ const FlightSearchForm = () => {
             <option value="First">First</option>
           </select>
         </div>
-        <div className="mb-4 bg-black p-3">
+        <div className="mb-4 bg-black p-4">
           <label className="flex items-center space-x- bg-black text-gray-300">
             {/* <input
               checked={showProFilters}
               onChange={() => setShowProFilters(!showProFilters)}
               className="form-checkbox h-5 w-5 text-orange-600"
             /> */}
-            <FaToggleOn/>
+            <FaToggleOn className='bg-black '/>
             <span className="ml-2 bg-black">
             
             Show <span className='text-orange-500 bg-black'>Pro Filters</span></span>
